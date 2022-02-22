@@ -1,4 +1,4 @@
-import { Main } from "./Main";
+import ('./header.css'); 
 
 export function Header() {
   return (

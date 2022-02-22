@@ -1,12 +1,20 @@
-import { EmojiCard } from "../EmojuCard/EmojiCard";
-import loading from "./img/loading.gif";
+import { EmojiCard } from "../EmojiCard/EmojiCard";
 
 export function Emoji({ emoji, loading }) {
   const uniq = (keywords) => [...new Set(keywords.split(" "))].join(" ");
 
   if (loading) {
-    console.log('here');
-    return <img src={loading} alt="loading" />;
+    return (
+      <>
+        <div></div>
+        <div className="text-center">
+          <div className="spinner-border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <div></div>
+      </>
+    );
   }
 
   return (

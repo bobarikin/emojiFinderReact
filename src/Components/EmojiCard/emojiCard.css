@@ -1,0 +1,21 @@
+.emoji-card {
+  width: 316px;
+  height: 184px;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.symbol {
+  font-size: 48px;
+}
+
+.keywords {
+  max-width: 80%;
+  text-align: center;
+}
