@@ -1,4 +1,4 @@
-import ('./emojiCard.css');
+import './emojiCard.css';
 
 export function EmojiCard({ symbol, title, keywords }) {
   return (
