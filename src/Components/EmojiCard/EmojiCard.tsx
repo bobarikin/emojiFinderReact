@@ -1,6 +1,12 @@
-import './emojiCard.css';
+import './EmojiCard.css';
 
-export function EmojiCard({ symbol, title, keywords }) {
+type Props = {
+  symbol: string,
+  title: string,
+  keywords: string
+}
+
+export function EmojiCard({ symbol, title, keywords }: Props) {
   return (
     <div className="emoji-card">
       <div className="emoji-card__symbol">{symbol}</div>
