@@ -11,12 +11,21 @@
   align-items: center;
 }
 
-.symbol {
+.emoji-card__symbol {
   font-size: 48px;
 }
 
-.keywords {
-  max-width: 80%;
-  text-align: center;
+.emoji-card__title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 28px;
+  text-decoration-line: underline;
+  color: #000000;
 }
-/* должно называться с большой буквы */
+
+.emoji-card__keywords {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #3f444a;
+}

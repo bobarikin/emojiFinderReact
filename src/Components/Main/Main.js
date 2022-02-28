@@ -11,35 +11,39 @@ export function Main(props) {
     currentPage,
     setEmojiPerPage,
     startPage,
-    endPage
+    endPage,
   } = props;
 
   return (
     <>
-      <main>
-        <input onInput={searchEmoji}></input>
+      <main className="container-size">
+        <input
+          placeholder="Enter emojis for search"
+          onInput={searchEmoji}
+        ></input>
         <Emojies emoji={currenEmoji} />
       </main>
-
-      <Pagination
-        lastPage={lastPage}
-        setCurrentPage={setCurrentPage}
-        currentPage={currentPage}
-        startPage={startPage}
-        endPage={endPage}
-      />
-
-      <div>
-        <select
-          className="form-select form-select-sm"
-          onChange={(event) => setEmojiPerPage(+event.target.value)}
-        >
-          <option defaultValue>Per Page</option>
-          <option value="12">12</option>
-          <option value="24">24</option>
-          <option value="48">48</option>
-        </select>
-      </div>
+      <hr className="container-size hr_bottom" />
+      <footer className="container-size">
+        <Pagination
+          lastPage={lastPage}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+          startPage={startPage}
+          endPage={endPage}
+        />
+        <div>
+          <select
+            className="form-select form-select-sm"
+            onChange={(event) => setEmojiPerPage(+event.target.value)}
+          >
+            <option defaultValue>Per Page</option>
+            <option value="12">12</option>
+            <option value="24">24</option>
+            <option value="48">48</option>
+          </select>
+        </div>
+      </footer>
     </>
   );
 }
